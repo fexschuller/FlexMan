@@ -1,0 +1,332 @@
+﻿Device index: 0
+Device name: "Microsoft Soundmapper - Input"
+Default sample rate: 44100
+Input: max channel count 2, default latency 0.09s (low) 0.18s (high)
+Output: max channel count 0, default latency 0.09s (low) 0.18s (high)
+Host API name: MME
+Host API type: 2 [MME]
+
+Device index: 1
+Device name: "Line (AG06/AG03)"
+Default sample rate: 44100
+Input: max channel count 2, default latency 0.09s (low) 0.18s (high)
+Output: max channel count 0, default latency 0.09s (low) 0.18s (high)
+Host API name: MME
+Host API type: 2 [MME]
+DEFAULT INPUT DEVICE for this host API
+
+Device index: 2
+Device name: "Mikrofon (Steam Streaming Micro"
+Default sample rate: 44100
+Input: max channel count 8, default latency 0.09s (low) 0.18s (high)
+Output: max channel count 0, default latency 0.09s (low) 0.18s (high)
+Host API name: MME
+Host API type: 2 [MME]
+
+Device index: 3
+Device name: "Microsoft Soundmapper - Output"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.09s (low) 0.18s (high)
+Output: max channel count 2, default latency 0.09s (low) 0.18s (high)
+Host API name: MME
+Host API type: 2 [MME]
+
+Device index: 4
+Device name: "Line (AG06/AG03)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.09s (low) 0.18s (high)
+Output: max channel count 2, default latency 0.09s (low) 0.18s (high)
+Host API name: MME
+Host API type: 2 [MME]
+DEFAULT OUTPUT DEVICE for this host API
+
+Device index: 5
+Device name: "1 - T24i-30 (AMD High Definitio"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.09s (low) 0.18s (high)
+Output: max channel count 2, default latency 0.09s (low) 0.18s (high)
+Host API name: MME
+Host API type: 2 [MME]
+
+Device index: 6
+Device name: "Lautsprecher (Steam Streaming S"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.09s (low) 0.18s (high)
+Output: max channel count 8, default latency 0.09s (low) 0.18s (high)
+Host API name: MME
+Host API type: 2 [MME]
+
+Device index: 7
+Device name: "Lautsprecher (Steam Streaming M"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.09s (low) 0.18s (high)
+Output: max channel count 8, default latency 0.09s (low) 0.18s (high)
+Host API name: MME
+Host API type: 2 [MME]
+
+Device index: 8
+Device name: "Primärer Soundaufnahmetreiber"
+Default sample rate: 44100
+Input: max channel count 2, default latency 0.12s (low) 0.24s (high)
+Output: max channel count 0, default latency 0s (low) 0s (high)
+Host API name: Windows DirectSound
+Host API type: 1 [DirectSound]
+DEFAULT INPUT DEVICE for this host API
+
+Device index: 9
+Device name: "Line (AG06/AG03)"
+Default sample rate: 44100
+Input: max channel count 2, default latency 0.12s (low) 0.24s (high)
+Output: max channel count 0, default latency 0s (low) 0s (high)
+Host API name: Windows DirectSound
+Host API type: 1 [DirectSound]
+
+Device index: 10
+Device name: "Mikrofon (Steam Streaming Microphone)"
+Default sample rate: 44100
+Input: max channel count 8, default latency 0.12s (low) 0.24s (high)
+Output: max channel count 0, default latency 0s (low) 0s (high)
+Host API name: Windows DirectSound
+Host API type: 1 [DirectSound]
+
+Device index: 11
+Device name: "Primärer Soundtreiber"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0s (low) 0s (high)
+Output: max channel count 2, default latency 0.12s (low) 0.24s (high)
+Host API name: Windows DirectSound
+Host API type: 1 [DirectSound]
+DEFAULT OUTPUT DEVICE for this host API
+
+Device index: 12
+Device name: "Line (AG06/AG03)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0s (low) 0s (high)
+Output: max channel count 2, default latency 0.12s (low) 0.24s (high)
+Host API name: Windows DirectSound
+Host API type: 1 [DirectSound]
+
+Device index: 13
+Device name: "1 - T24i-30 (AMD High Definition Audio Device)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0s (low) 0s (high)
+Output: max channel count 2, default latency 0.12s (low) 0.24s (high)
+Host API name: Windows DirectSound
+Host API type: 1 [DirectSound]
+
+Device index: 14
+Device name: "Lautsprecher (Steam Streaming Speakers)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0s (low) 0s (high)
+Output: max channel count 8, default latency 0.12s (low) 0.24s (high)
+Host API name: Windows DirectSound
+Host API type: 1 [DirectSound]
+
+Device index: 15
+Device name: "Lautsprecher (Steam Streaming Microphone)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0s (low) 0s (high)
+Output: max channel count 8, default latency 0.12s (low) 0.24s (high)
+Host API name: Windows DirectSound
+Host API type: 1 [DirectSound]
+
+Device index: 16
+Device name: "1 - T24i-30 (AMD High Definition Audio Device)"
+Default sample rate: 48000
+Input: max channel count 0, default latency 0s (low) 0s (high)
+Output: max channel count 2, default latency 0.003s (low) 0.01s (high)
+Host API name: Windows WASAPI
+Host API type: 13 [WASAPI]
+WASAPI device default format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 192000 average bytes/second, block alignment 4 bytes, 16 bits per sample, 16 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000001-0000-0010-8000-00AA00389B71} [PCM]
+WASAPI device mix format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 384000 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000003-0000-0010-8000-00AA00389B71} [IEEE Float]
+
+Device index: 17
+Device name: "Lautsprecher (Steam Streaming Speakers)"
+Default sample rate: 48000
+Input: max channel count 0, default latency 0s (low) 0s (high)
+Output: max channel count 2, default latency 0.003s (low) 0.01s (high)
+Host API name: Windows WASAPI
+Host API type: 13 [WASAPI]
+WASAPI device default format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 192000 average bytes/second, block alignment 4 bytes, 16 bits per sample, 16 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000001-0000-0010-8000-00AA00389B71} [PCM]
+WASAPI device mix format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 384000 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000003-0000-0010-8000-00AA00389B71} [IEEE Float]
+
+Device index: 18
+Device name: "Lautsprecher (Steam Streaming Microphone)"
+Default sample rate: 48000
+Input: max channel count 0, default latency 0s (low) 0s (high)
+Output: max channel count 2, default latency 0.003s (low) 0.01s (high)
+Host API name: Windows WASAPI
+Host API type: 13 [WASAPI]
+WASAPI device default format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 384000 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000001-0000-0010-8000-00AA00389B71} [PCM]
+WASAPI device mix format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 384000 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000003-0000-0010-8000-00AA00389B71} [IEEE Float]
+
+Device index: 19
+Device name: "Line (AG06/AG03)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0s (low) 0s (high)
+Output: max channel count 2, default latency 0.003s (low) 0.01s (high)
+Host API name: Windows WASAPI
+Host API type: 13 [WASAPI]
+DEFAULT OUTPUT DEVICE for this host API
+WASAPI device default format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 44100 samples/second, 264600 average bytes/second, block alignment 6 bytes, 24 bits per sample, 24 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000001-0000-0010-8000-00AA00389B71} [PCM]
+WASAPI device mix format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 44100 samples/second, 352800 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000003-0000-0010-8000-00AA00389B71} [IEEE Float]
+
+Device index: 20
+Device name: "Line (AG06/AG03)"
+Default sample rate: 44100
+Input: max channel count 2, default latency 0.003s (low) 0.01s (high)
+Output: max channel count 0, default latency 0s (low) 0s (high)
+Host API name: Windows WASAPI
+Host API type: 13 [WASAPI]
+DEFAULT INPUT DEVICE for this host API
+WASAPI device default format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 44100 samples/second, 264600 average bytes/second, block alignment 6 bytes, 24 bits per sample, 24 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000001-0000-0010-8000-00AA00389B71} [PCM]
+WASAPI device mix format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 44100 samples/second, 352800 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000003-0000-0010-8000-00AA00389B71} [IEEE Float]
+
+Device index: 21
+Device name: "Mikrofon (Steam Streaming Microphone)"
+Default sample rate: 44100
+Input: max channel count 1, default latency 0.003s (low) 0.01s (high)
+Output: max channel count 0, default latency 0s (low) 0s (high)
+Host API name: Windows WASAPI
+Host API type: 13 [WASAPI]
+WASAPI device default format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 1 channels, 44100 samples/second, 176400 average bytes/second, block alignment 4 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 4 [Front Center], subformat {00000001-0000-0010-8000-00AA00389B71} [PCM]
+WASAPI device mix format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 1 channels, 44100 samples/second, 176400 average bytes/second, block alignment 4 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 4 [Front Center], subformat {00000003-0000-0010-8000-00AA00389B71} [IEEE Float]
+
+Device index: 22
+Device name: "1 - T24i-30 (AMD High Definition Audio Device) [Loopback]"
+Default sample rate: 48000
+Input: max channel count 2, default latency 0.003s (low) 0.01s (high)
+Output: max channel count 0, default latency 0s (low) 0s (high)
+Host API name: Windows WASAPI
+Host API type: 13 [WASAPI]
+WASAPI device default format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 192000 average bytes/second, block alignment 4 bytes, 16 bits per sample, 16 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000001-0000-0010-8000-00AA00389B71} [PCM]
+WASAPI device mix format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 384000 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000003-0000-0010-8000-00AA00389B71} [IEEE Float]
+
+Device index: 23
+Device name: "Lautsprecher (Steam Streaming Speakers) [Loopback]"
+Default sample rate: 48000
+Input: max channel count 2, default latency 0.003s (low) 0.01s (high)
+Output: max channel count 0, default latency 0s (low) 0s (high)
+Host API name: Windows WASAPI
+Host API type: 13 [WASAPI]
+WASAPI device default format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 192000 average bytes/second, block alignment 4 bytes, 16 bits per sample, 16 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000001-0000-0010-8000-00AA00389B71} [PCM]
+WASAPI device mix format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 384000 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000003-0000-0010-8000-00AA00389B71} [IEEE Float]
+
+Device index: 24
+Device name: "Lautsprecher (Steam Streaming Microphone) [Loopback]"
+Default sample rate: 48000
+Input: max channel count 2, default latency 0.003s (low) 0.01s (high)
+Output: max channel count 0, default latency 0s (low) 0s (high)
+Host API name: Windows WASAPI
+Host API type: 13 [WASAPI]
+WASAPI device default format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 384000 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000001-0000-0010-8000-00AA00389B71} [PCM]
+WASAPI device mix format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 48000 samples/second, 384000 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000003-0000-0010-8000-00AA00389B71} [IEEE Float]
+
+Device index: 25
+Device name: "Line (AG06/AG03) [Loopback]"
+Default sample rate: 44100
+Input: max channel count 2, default latency 0.003s (low) 0.01s (high)
+Output: max channel count 0, default latency 0s (low) 0s (high)
+Host API name: Windows WASAPI
+Host API type: 13 [WASAPI]
+WASAPI device default format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 44100 samples/second, 264600 average bytes/second, block alignment 6 bytes, 24 bits per sample, 24 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000001-0000-0010-8000-00AA00389B71} [PCM]
+WASAPI device mix format: WAVEFORMAT with format tag 65534 [EXTENSIBLE], 2 channels, 44100 samples/second, 352800 average bytes/second, block alignment 8 bytes, 32 bits per sample, 32 valid bits per sample, channel mask 3 [Front Left, Front Right], subformat {00000003-0000-0010-8000-00AA00389B71} [IEEE Float]
+
+Device index: 26
+Device name: "Speakers (Realtek HD Audio output)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.01s (low) 0.04s (high)
+Output: max channel count 8, default latency 0.01s (low) 0.04s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+
+Device index: 27
+Device name: "Microphone (Realtek HD Audio Mic input)"
+Default sample rate: 44100
+Input: max channel count 2, default latency 0.01s (low) 0.04s (high)
+Output: max channel count 0, default latency 0.01s (low) 0.04s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+
+Device index: 28
+Device name: "Line In (Realtek HD Audio Line input)"
+Default sample rate: 44100
+Input: max channel count 2, default latency 0.01s (low) 0.04s (high)
+Output: max channel count 0, default latency 0.01s (low) 0.04s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+
+Device index: 29
+Device name: "Stereo Mix (Realtek HD Audio Stereo input)"
+Default sample rate: 48000
+Input: max channel count 2, default latency 0.01s (low) 0.04s (high)
+Output: max channel count 0, default latency 0.01s (low) 0.04s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+
+Device index: 30
+Device name: "Headphones (Realtek HD Audio 2nd output)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.01s (low) 0.04s (high)
+Output: max channel count 2, default latency 0.01s (low) 0.04s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+
+Device index: 31
+Device name: "Output (AMD HD Audio HDMI out #0)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.01s (low) 0.04s (high)
+Output: max channel count 2, default latency 0.01s (low) 0.04s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+
+Device index: 32
+Device name: "Line (AG06/AG03-1)"
+Default sample rate: 44100
+Input: max channel count 2, default latency 0.01s (low) 0.0853333s (high)
+Output: max channel count 0, default latency 0.01s (low) 0.0853333s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+DEFAULT INPUT DEVICE for this host API
+
+Device index: 33
+Device name: "Line (AG06/AG03-1)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.01s (low) 0.0853333s (high)
+Output: max channel count 2, default latency 0.01s (low) 0.0853333s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+DEFAULT OUTPUT DEVICE for this host API
+
+Device index: 34
+Device name: "Microphone (Steam Streaming Microphone Wave)"
+Default sample rate: 44100
+Input: max channel count 8, default latency 0.01s (low) 0.0853333s (high)
+Output: max channel count 0, default latency 0.01s (low) 0.0853333s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+
+Device index: 35
+Device name: "Speakers (Steam Streaming Microphone Wave)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.01s (low) 0.0853333s (high)
+Output: max channel count 8, default latency 0.01s (low) 0.0853333s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+
+Device index: 36
+Device name: "Input (Steam Streaming Speakers Wave)"
+Default sample rate: 44100
+Input: max channel count 8, default latency 0.01s (low) 0.0853333s (high)
+Output: max channel count 0, default latency 0.01s (low) 0.0853333s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+
+Device index: 37
+Device name: "Speakers (Steam Streaming Speakers Wave)"
+Default sample rate: 44100
+Input: max channel count 0, default latency 0.01s (low) 0.0853333s (high)
+Output: max channel count 8, default latency 0.01s (low) 0.0853333s (high)
+Host API name: Windows WDM-KS
+Host API type: 11 [WDMKS]
+

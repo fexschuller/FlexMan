@@ -1,0 +1,106 @@
+
+:root {
+  /* Pico scales font-size up to 131% at wide viewports; pin it smaller for a fixed-size desktop app. */
+  --pico-font-size: 87.5%;
+  --content-inset: 2rem;
+  --scrollbar-gutter-estimate: 17px;
+}
+main {
+  display: block;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable both-edges;
+  padding-top: 1rem;
+  padding-left: var(--content-inset);
+  padding-right: var(--content-inset);
+}
+
+
+[data-tooltip]::before,
+[data-tooltip][data-placement="top"]::before {
+  white-space: normal;
+  width: 250px;
+  text-align: left;
+}
+
+.error-text {
+  color: var(--pico-del-color);
+}
+
+.log-output {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.toast-stack {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+.toast {
+  padding: 0.5rem 1rem;
+  border-radius: var(--pico-border-radius);
+  color: var(--pico-contrast-inverse);
+  background: var(--pico-del-color);
+  cursor: pointer;
+}
+
+button[data-status="passed"] {
+  --pico-primary-background: var(--pico-ins-color);
+  --pico-primary-border: var(--pico-ins-color);
+  --pico-primary-hover-background: var(--pico-ins-color);
+  --pico-primary-hover-border: var(--pico-ins-color);
+}
+
+button[data-status="failed"] {
+  --pico-primary-background: var(--pico-del-color);
+  --pico-primary-border: var(--pico-del-color);
+  --pico-primary-hover-background: var(--pico-del-color);
+  --pico-primary-hover-border: var(--pico-del-color);
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  > label {
+    flex-grow: 1;
+  }
+  > button {
+    margin-bottom: calc(var(--pico-spacing) * .375);
+    margin-top: calc(var(--pico-spacing) * .7);
+  }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: calc(var(--content-inset) + var(--scrollbar-gutter-estimate));
+    right: calc(var(--content-inset) + var(--scrollbar-gutter-estimate));
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    box-sizing: border-box;
+    background: color-mix(in srgb, var(--pico-background-color) 80%, transparent);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--pico-muted-border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > div {
+      display: flex;
+      gap: 0.5rem;
+      [type=button] {
+        margin-bottom: unset;
+      }
+    }
+}
