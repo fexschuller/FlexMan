@@ -1008,7 +1008,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "flexasio-configurator"
+name = "flexman"
 version = "0.1.0"
 dependencies = [
  "regex",

@@ -23,7 +23,7 @@ struct Backup {
 
 fn marker_path(config_path: &Path) -> PathBuf {
     let mut marker = config_path.as_os_str().to_owned();
-    marker.push(".flexasioconfigurator-backup");
+    marker.push(".flexman-backup");
     PathBuf::from(marker)
 }
 

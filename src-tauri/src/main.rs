@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    flexasio_configurator_lib::run()
+    flexman_lib::run()
 }
