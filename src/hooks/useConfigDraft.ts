@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import * as backend from "../backend";
 import { useToast } from "../components/ToastProvider";
-import { draftFromConfig, draftsEqual, EMPTY_FORM_DRAFT, FormDraft, updateFromDraft } from "../draft";
+import {
+  draftFromConfig,
+  draftsEqual,
+  EMPTY_FORM_DRAFT,
+  FormDraft,
+  updateFromDraft,
+} from "../draft";
 import { Config, errorMessage } from "../models";
 import { validatePositiveInteger, validatePositiveNumber } from "../validation";
 
@@ -62,8 +68,22 @@ export function useConfigDraft(mode: Mode) {
   }
 
   useEffect(() => {
-    reloadConfig();
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- runs once on mount only
+    let cancelled = false;
+
+    backend
+      .readConfig()
+      .then((loaded) => {
+        if (cancelled) return;
+        setConfig(loaded);
+        setFormDraft(draftFromConfig(loaded));
+      })
+      .catch((err) => {
+        if (!cancelled) setConfigError(errorMessage(err));
+      });
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const isFormDirty = config !== null && !draftsEqual(formDraft, draftFromConfig(config));
@@ -100,10 +120,10 @@ export function useConfigDraft(mode: Mode) {
     }
 
     let cancelled = false;
-    setRawLoadError(null);
     Promise.all([backend.readRawConfig(), backend.previewConfig(updateFromDraft(formDraft))])
       .then(([diskText, preview]) => {
         if (cancelled) return;
+        setRawLoadError(null);
         setOnDisk(diskText);
         setRaw(preview);
       })

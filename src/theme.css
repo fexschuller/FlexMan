@@ -1,12 +1,12 @@
-
 :root {
   /* Pico scales font-size up to 131% at wide viewports; pin it smaller for a fixed-size desktop app. */
   --pico-font-size: 87.5%;
   --content-inset: 2rem;
-  --scrollbar-gutter-estimate: 17px;
 }
+/* Flex column so the sticky footer sits at the bottom even when the page is short. */
 main {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -16,6 +16,9 @@ main {
   padding-right: var(--content-inset);
 }
 
+.page {
+  flex: 1 0 auto;
+}
 
 [data-tooltip]::before,
 [data-tooltip][data-placement="top"]::before {
@@ -26,6 +29,28 @@ main {
 
 .error-text {
   color: var(--pico-del-color);
+}
+
+/* Pico's classless build doesn't style button[role="link"]; mirror its <a> look. */
+button[role="link"] {
+  all: unset;
+  color: var(--pico-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--pico-primary-underline);
+  text-underline-offset: 0.125em;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  transition:
+    color var(--pico-transition),
+    text-decoration-color var(--pico-transition);
+  &:hover {
+    color: var(--pico-primary-hover);
+    text-decoration-color: var(--pico-primary-hover-underline);
+  }
+  &:focus-visible {
+    outline: var(--pico-outline-width) solid var(--pico-primary-focus);
+    border-radius: 2px;
+  }
 }
 
 .log-output {
@@ -76,31 +101,30 @@ button[data-status="failed"] {
     flex-grow: 1;
   }
   > button {
-    margin-bottom: calc(var(--pico-spacing) * .375);
-    margin-top: calc(var(--pico-spacing) * .7);
+    margin-bottom: calc(var(--pico-spacing) * 0.375);
+    margin-top: calc(var(--pico-spacing) * 0.7);
   }
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: calc(var(--content-inset) + var(--scrollbar-gutter-estimate));
-    right: calc(var(--content-inset) + var(--scrollbar-gutter-estimate));
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    min-height: 3.5rem;
-    box-sizing: border-box;
-    background: color-mix(in srgb, var(--pico-background-color) 80%, transparent);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid var(--pico-muted-border-color);
+  position: sticky;
+  flex-shrink: 0;
+  bottom: 0;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  box-sizing: border-box;
+  background: color-mix(in srgb, var(--pico-background-color) 80%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--pico-muted-border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > div {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    > div {
-      display: flex;
-      gap: 0.5rem;
-      [type=button] {
-        margin-bottom: unset;
-      }
+    gap: 0.5rem;
+    [type="button"] {
+      margin-bottom: unset;
     }
+  }
 }

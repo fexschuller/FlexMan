@@ -4,6 +4,7 @@ import { linter, Diagnostic } from "@codemirror/lint";
 import { toml } from "@codemirror/legacy-modes/mode/toml";
 import * as backend from "../backend";
 import { usePrefersDark } from "../hooks/usePrefersDark";
+import ErrorText from "./ErrorText";
 
 const tomlLanguage = StreamLanguage.define(toml);
 
@@ -38,7 +39,7 @@ function ConfigEditor({ value, onChange, loadError }: ConfigEditorProps) {
 
   return (
     <article>
-      {loadError && <p style={{ color: "red" }}>{loadError}</p>}
+      {loadError && <ErrorText>{loadError}</ErrorText>}
       <CodeMirror
         value={value}
         height="400px"

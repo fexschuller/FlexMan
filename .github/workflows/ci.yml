@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   build-and-test:
-    name: Build & Test
+    name: Build and test
     runs-on: windows-latest
     permissions:
       contents: read
@@ -32,21 +32,20 @@ jobs:
         with:
           workspaces: src-tauri
 
-      - name: Install frontend dependencies
-        run: npm ci
+      - name: Build and test frontend
+        run: |
+          npm ci
+          npm test
+          npm run build
 
-      - name: Build frontend (type-check + bundle)
-        run: npm run build
-
-      - name: Frontend tests
-        run: npm test
-
-      - name: Rust tests
+      - name: Test backend
         working-directory: src-tauri
-        run: cargo test --locked
+        run: |
+          cargo test --locked
+          npx tauri build --no-bundle
 
   release:
-    name: Build & attach Windows installer
+    name: Build release
     if: github.event_name == 'release'
     needs: build-and-test
     runs-on: windows-latest

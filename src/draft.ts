@@ -1,4 +1,10 @@
-import { Config, ConfigUpdatePayload, DeviceConfig, DeviceConfigDraft, DeviceConfigUpdate } from "./models";
+import {
+  Config,
+  ConfigUpdatePayload,
+  DeviceConfig,
+  DeviceConfigDraft,
+  DeviceConfigUpdate,
+} from "./models";
 
 export interface FormDraft {
   backend: string;

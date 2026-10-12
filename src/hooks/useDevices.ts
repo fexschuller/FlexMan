@@ -20,7 +20,6 @@ export function useDevices() {
   useEffect(() => {
     let cancelled = false;
 
-    setError(null);
     backend
       .listDevices()
       .then((list) => {

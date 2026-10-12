@@ -18,11 +18,18 @@ interface DeviceFieldsProps {
   deviceRegex: string | null;
 }
 
-function Field({ label, tooltip, children }: { label: string; tooltip: string; children: ReactNode }) {
+function Field({
+  label,
+  tooltip,
+  children,
+}: {
+  label: string;
+  tooltip: string;
+  children: ReactNode;
+}) {
   return (
     <label>
-      {label} <InfoBadge text={tooltip} />:{" "}
-      {children}
+      {label} <InfoBadge text={tooltip} />: {children}
     </label>
   );
 }
@@ -51,7 +58,14 @@ function TristateField({
   );
 }
 
-function DeviceFields({ label, draft, onChange, deviceOptions, backend, deviceRegex }: DeviceFieldsProps) {
+function DeviceFields({
+  label,
+  draft,
+  onChange,
+  deviceOptions,
+  backend,
+  deviceRegex,
+}: DeviceFieldsProps) {
   const isWasapi = backend === WASAPI_BACKEND;
   const isDeviceAvailable = deviceOptions.some((d) => d.name === draft.device);
 

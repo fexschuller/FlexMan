@@ -38,31 +38,33 @@ function App() {
   }
 
   return (
-    <main style={{ paddingBottom: "4rem" }}>
-      <div role="group">
-        <button onClick={() => handleModeChange("form")} disabled={mode === "form"}>
-          Config
-        </button>
-        <button onClick={() => handleModeChange("raw")} disabled={mode === "raw"}>
-          TOML
-        </button>
-        <button onClick={() => handleModeChange("diagnostics")} disabled={mode === "diagnostics"}>
-          Diagnostics
-        </button>
+    <main>
+      <div className="page">
+        <div role="group">
+          <button onClick={() => handleModeChange("form")} disabled={mode === "form"}>
+            Config
+          </button>
+          <button onClick={() => handleModeChange("raw")} disabled={mode === "raw"}>
+            TOML
+          </button>
+          <button onClick={() => handleModeChange("diagnostics")} disabled={mode === "diagnostics"}>
+            Diagnostics
+          </button>
+        </div>
+
+        {mode === "form" && (
+          <ConfigForm
+            config={config}
+            configError={configError}
+            draft={formDraft}
+            onChange={setFormDraft}
+          />
+        )}
+
+        {mode === "raw" && <ConfigEditor value={raw} onChange={setRaw} loadError={rawLoadError} />}
+
+        {mode === "diagnostics" && <Diagnostics />}
       </div>
-
-      {mode === "form" && (
-        <ConfigForm
-          config={config}
-          configError={configError}
-          draft={formDraft}
-          onChange={setFormDraft}
-        />
-      )}
-
-      {mode === "raw" && <ConfigEditor value={raw} onChange={setRaw} loadError={rawLoadError} />}
-
-      {mode === "diagnostics" && <Diagnostics />}
 
       {mode === "form" && config && (
         <footer>

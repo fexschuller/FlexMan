@@ -6,11 +6,7 @@ import { FormDraft } from "../draft";
 import { useDevices } from "../hooks/useDevices";
 import { AudioDevice, Config } from "../models";
 
-function filterByDirection(
-  devices: AudioDevice[],
-  backend: string,
-  direction: "input" | "output",
-) {
+function filterByDirection(devices: AudioDevice[], backend: string, direction: "input" | "output") {
   return devices.filter(
     (d) =>
       d.host_api === backend &&

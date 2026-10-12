@@ -12,13 +12,23 @@ function Diagnostics() {
 
   const [flexasioLog, setFlexasioLog] = useState<string | null>(null);
   const [flexasioLogError, setFlexasioLogError] = useState<string | null>(null);
-  const [selfTestOpen, setSelfTestOpen] = useState(false);
 
   const [report, setReport] = useState<SystemReport | null>(null);
   const [reportError, setReportError] = useState<string | null>(null);
 
   const showToast = useToast();
   const { log } = useSelfTestLog();
+
+  // Auto-expand once a new self-test result comes in, regardless of which view ran it.
+  // Adjusted during render rather than in an effect to avoid an extra render pass.
+  const [selfTestOpen, setSelfTestOpen] = useState(log !== null);
+  const [seenLog, setSeenLog] = useState(log);
+  if (log !== seenLog) {
+    setSeenLog(log);
+    if (log !== null) {
+      setSelfTestOpen(true);
+    }
+  }
 
   useEffect(() => {
     backend
@@ -33,13 +43,6 @@ function Diagnostics() {
       .then(setReport)
       .catch((err) => setReportError(errorMessage(err)));
   }, []);
-
-  // Auto-expand once a new self-test result comes in, regardless of which view ran it.
-  useEffect(() => {
-    if (log !== null) {
-      setSelfTestOpen(true);
-    }
-  }, [log]);
 
   async function toggleLogging() {
     const next = !loggingEnabled;
